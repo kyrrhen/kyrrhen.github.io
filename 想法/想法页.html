@@ -125,7 +125,46 @@
     <div class="container">
         <h1>hello</h1> 
         <p class="subtitle">感谢您于百忙之中抽出时间</p>
-        <div class="photo-grid">
+
+
+<div class="photo-grid">
+            <div class="photo-card">
+                <img src="223.jpg" alt="照片1" onclick="openModal(this.src)"> 
+                <div class="photo-info">
+                    <h3>22.3</h3>
+                    <div style="max-width:700px;margin:20px 0;">
+                    <div id="textWrap" style="overflow:hidden;max-height:120px;transition:all 0.3s;">
+                        我一直觉得，会在galgame下面写下一段真心感想的人，大多不是为了炫耀玩过多少作品，而是真的在那些虚构的故事里，捡到过一点现实里不太容易得到的东西。
+                        我自己也是这样，玩过的作品不算多，但真正留在心里的，也就那么几部，《纸上的魔法使》和最近的《LimeLight Lemonade Jam》，刚好是两种完全不同，却又同样能戳中我的类型。
+                        玩纸魔的时候，我其实并没有期待什么治愈，反而被它那种安静又带着点宿命感的氛围抓住了，故事不吵闹，不强行煽情，却会在某个不经意的台词里，让人突然意识到，原来孤独、遗憾、不敢靠近的心情，是可以被这样认真写出来的。
+                        它不甜，甚至有点涩，可正是这种不完美，让我觉得真实，就像自己那些说不出口的心事，被悄悄读懂了一样。
+                        而到了《LimeLight Lemonade Jam》，又是另一种完全不同的体验，清新、明亮，带着柚子社一贯的温柔，角色之间的互动自然又舒服，没有太多曲折压抑的冲突，更多的是日常里的陪伴
+                        、理解和一点点慢慢靠近的心动，这种清爽又温暖的感觉，就像在疲惫的时候喝到一杯刚好甜度的饮料，不用费脑子去思考什么深刻的道理，只要安心沉浸进去就好。
+                        有人会说，这些都是虚构的，何必投入那么多情绪，可我一直觉得，一部作品好不好，并不在于它是不是现实，而在于它能不能让人在某一刻觉得，自己被理解、被安慰、被轻轻托住。纸魔让我正视那些藏起来的情绪，
+                        柠檬水果酱则让我相信，简单的温柔和陪伴也很珍贵，两者风格截然不同，却都在以自己的方式，给玩家一段可以暂时放下现实压力的时光。
+                        我并不觉得这是逃避，反而更像是一种充电，在故事里被温柔对待过之后，回到现实里，也会稍微多一点力气，去面对那些琐碎又麻烦的日常。
+                        对我来说，这就足够了，不需要多么宏大的主题，也不需要多么惊艳的评价，只要在某个夜晚，打开游戏的时候，心里能安静一点、轻松一点，那这段体验就是有意义的.
+                    </div>
+                    <button onclick="
+                        let wrap = document.getElementById('textWrap');
+                        let btn = this;
+                        if(wrap.style.maxHeight == '120px'){
+                        wrap.style.maxHeight = '2000px';
+                        btn.innerText = '点击收起';
+                        }else{
+                        wrap.style.maxHeight = '120px';
+                        btn.innerText = '点击展开';
+                        }
+                    " style="margin-top:8px;padding:6px 14px;border:none;border-radius:6px;background:#f2f2f2;cursor:pointer;">
+                        点击展开
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="photo-grid" style="margin-top: 30px;">
             <div class="photo-card">
                 <img src="蛋糕与床.jpg" alt="照片1" onclick="openModal(this.src)"> 
                 <div class="photo-info">
